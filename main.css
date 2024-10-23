@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  background: #f9f7f7;
+  font-family: Roboto;
+}
+#bodyDiv {
+  display: grid;
+  grid-template-columns: 25% auto;
+  gap: 20px;
+  height: 100vh;
+}
+button {
+  background: #f9f7f7;
+  border: 0;
+  border-radius: 5px;
+  padding: 12px 25px;
+  width: fit-content;
+  font-weight: 600;
+  font-size: 16px;
+}
+button:hover {
+  opacity: 0.8;
+}
+h1 {
+  margin: 0;
+  font-size: 35px;
+}
+h2 {
+  margin: 0;
+  font-size: 30px;
+  width: fit-content;
+}
+
+p {
+  margin: 0;
+  font-size: 20px;
+}
+
+header {
+  /*height: 100%;*/
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #3f72af;
+  color: white;
+  padding-top: 20px;
+}
+header > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0px 10px 0px 10px;
+}
+header button {
+  color: #0f0f0f;
+}
+
+#navTodoLists {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 5px 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /*max-height: auto;*/
+}
+/* Style the scrollbar track */
+#navTodoLists::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+/* Style the scrollbar handle (thumb) */
+#navTodoLists::-webkit-scrollbar-thumb {
+  background: #112d4e; /* Color of the scrollbar handle */
+  border-radius: 6px; /* Rounded corners for the scrollbar handle */
+}
+
+/* Style the scrollbar handle on hover */
+#navTodoLists::-webkit-scrollbar-thumb:hover {
+  background: #dbe2ef; /* Darker color on hover */
+}
+
+/* Style the scrollbar track */
+
+#navTodoLists::-webkit-scrollbar-track {
+  background: 0;
+}
+.todoListNav > h2:hover {
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.btnAddNewTodo {
+  background: #3f72af;
+  color: white;
+}
+
+#homePage {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+}
+.todoWrapperButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.todoWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.todoWrapper > p:first-child {
+  font-weight: 400;
+  font-size: 18px;
+}
+.todoWrapper > h2,
+h3 {
+  margin: 0;
+}
+.todoList:empty {
+  padding: 0;
+  height: 0;
+}
+.todoList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 5px 0px 0px 30px;
+}
+.todoListNavWrapper {
+  display: flex;
+  /*flex-direction: column;*/
+  gap: 10px;
+  align-items: flex-end;
+}
+.doneTodo {
+  opacity: 0.3;
+}
+.priorityDiv,
+.todoListNavWrapper > p {
+  /*width: 50px;*/
+  /*height: 3px;*/
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 300;
+  text-decoration: underline;
+}
+.priorityDiv:hover,
+.todoListNavWrapper > p:hover,
+.todoListNavWrapper > h2:hover {
+  font-weight: 500;
+  cursor: pointer;
+}
